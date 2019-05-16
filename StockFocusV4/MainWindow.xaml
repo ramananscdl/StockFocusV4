@@ -1,0 +1,206 @@
+﻿<Window x:Class="StockFocusV4.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:StockFocusV4"
+        xmlns:uc ="clr-namespace:StockFocus.UI"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" WindowState="Maximized">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="85"/>
+            <RowDefinition Height="332*"/>
+            <RowDefinition Height="40"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="20"/>
+            <ColumnDefinition Width="100*"/>
+            <ColumnDefinition Width="20"/>
+        </Grid.ColumnDefinitions>
+        <Canvas  Grid.Row="0"   Grid.Column="0" Grid.ColumnSpan="3" Background="{DynamicResource ToolBoxHeaderColor}" >
+
+            <!--<Rectangle Width="200" Height="60" Canvas.Left="144" Canvas.Top="142"  >
+                <Rectangle.Fill>
+                    <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                        <LinearGradientBrush.RelativeTransform>
+                            <TransformGroup>
+                                <ScaleTransform CenterY="0.5" CenterX="0.5"/>
+                                <SkewTransform CenterY="0.5" CenterX="0.5"/>
+                                <RotateTransform CenterY="0.5" CenterX="0.5"/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </LinearGradientBrush.RelativeTransform>
+                        <GradientStop Color="#FF376C82" Offset="0.961"/>
+                        <GradientStop Color="#FF619C73" Offset="0.07"/>
+                        <GradientStop Color="#FF396F80" Offset="0.039"/>
+                        <GradientStop Color="#FF5F9973" Offset="0.978"/>
+                        <GradientStop Color="#FF477E7C" Offset="0.522"/>
+                    </LinearGradientBrush>
+                </Rectangle.Fill>
+            </Rectangle>-->
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="90"/>
+                    <ColumnDefinition Width="90"/>
+                    <ColumnDefinition Width="90"/>
+                    <ColumnDefinition Width="90"/>
+                    <ColumnDefinition Width="90"/>
+                    <ColumnDefinition Width="90"/>
+                    <ColumnDefinition Width="90"/>
+                    <ColumnDefinition Width="90"/>
+                    <ColumnDefinition Width="90"/>
+                    <ColumnDefinition Width="90"/>
+                    <ColumnDefinition Width="90"/>
+                    <ColumnDefinition Width="90"/>
+                    <ColumnDefinition Width="90"/>
+                    <ColumnDefinition Width="140"/>
+                    <ColumnDefinition Width="5"/>
+                    <ColumnDefinition Width="140"/>
+                    <ColumnDefinition Width="5"/>
+                    <ColumnDefinition Width="190"/>
+                    <ColumnDefinition Width="180*"/>
+                </Grid.ColumnDefinitions>
+
+                <Button x:Name="btntest" Click="btntest_Click" Background="{DynamicResource TopMenuBtnColor}"   Grid.Column="1" Height="69" Foreground="White"   Width="70" FontFamily="Century Gothic"   Template="{DynamicResource btnTopMenus}" Margin="10,7,10,-7"    >
+                    <Canvas>
+
+
+                        <Canvas>
+                            <Path Fill="{DynamicResource IconColorA}" Data="M78.493,143.181H62.832v-0.125c0-43.623,34.809-80.328,79.201-80.122
+		c21.642,0.098,41.523,8.841,55.691,23.135l25.843-24.931c-20.864-21.043-49.693-34.049-81.534-34.049
+		c-63.629,0-115.208,51.955-115.298,116.075h-15.84c-9.708,0-13.677,6.49-8.823,14.437l33.799,33.504
+		c6.704,6.704,10.736,6.91,17.646,0l33.799-33.504C92.17,149.662,88.192,143.181,78.493,143.181z "  Stretch="Fill" Height="28.7" Canvas.Left="-23.76" Canvas.Top="-23.85" Width="35.52" ></Path>
+
+                            <Path Fill="{DynamicResource IconColorB}" Data="M283.978,129.236l-33.799-33.433
+		c-6.892-6.892-11.156-6.481-17.637,0l-33.799,33.433c-4.854,7.929-0.894,14.419,8.814,14.419h15.635
+		c-0.25,43.337-34.943,79.72-79.183,79.514c-21.633-0.089-41.505-8.814-55.691-23.099l-25.843,24.896
+		c20.873,21.007,49.702,33.996,81.534,33.996c63.432,0,114.869-51.579,115.28-115.298h15.867
+		C284.872,143.655,288.832,137.156,283.978,129.236z" Stretch="Fill" Canvas.Left="-13.76" Canvas.Top="-14.764" Height="28.528" Width="35.52" ></Path>
+                            <!--<Polygon Points="10,0,20,20,0,20,10,0"></Polygon>-->
+                        </Canvas>
+
+
+
+                        <!--</Viewbox>-->
+                        <TextBlock Text="Refresh" Canvas.Left="-21" Canvas.Top="17" Foreground="{DynamicResource TopButtonTextColor}"  ></TextBlock>
+
+                    </Canvas>
+                </Button>
+
+                <Button x:Name="btnAddStock" Click="btnAddStock_Click"  Background="{DynamicResource TopMenuBtnColor}"   Grid.Column="3" Height="69" Foreground="White"   Width="70" FontFamily="Century Gothic"   Template="{DynamicResource btnTopMenus}" Margin="10,7,10,-7"    >
+                    <Canvas>
+
+                        <Canvas>
+                            <Path Canvas.Left="9" Canvas.Top="-25" Data="m10 51h-3v-3h-2v3h-3v2h3v3h2v-3h3z" Fill="{DynamicResource IconColorA}" Height="15" Stretch="Fill" Width="12.001"/>
+                            <Path Canvas.Left="-25" Canvas.Top="-25" Data="m22.50391 20.40869h-2a4.00426 4.00426 0 0 1 -4-4v-2.00049a4.00385 4.00385 0 0 1 4-3.99951h2a4.00428 4.00428 0 0 1 4 4l2-.00049a6.00647 6.00647 0 0 0 -6-5.99951v-4h-2v4a6.00646 6.00646 0 0 0 -6 5.99951v2.00049a6.00655 6.00655 0 0 0 6 6h2a4.00386 4.00386 0 0 1 4 3.99951v2.00049a4.00427 4.00427 0 0 1 -4 4h-2a4.00426 4.00426 0 0 1 -4-4h-2a6.00655 6.00655 0 0 0 6 6v4h2v-4a6.00657 6.00657 0 0 0 6-6v-2.00049a6.00647 6.00647 0 0 0 -6-5.99951z" Fill="{DynamicResource IconColorB}"/>
+                        </Canvas>
+
+                        <TextBlock Text="Add Stock" Canvas.Left="-27" Canvas.Top="17" Foreground="{DynamicResource TopButtonTextColor}"   ></TextBlock>
+
+                    </Canvas>
+                </Button>
+
+                <Button x:Name="btnAddTransaction" Click="btnAddTransaction_Click"  Background="{DynamicResource TopMenuBtnColor}"   Grid.Column="4" Height="69" Foreground="White"   Width="70" FontFamily="Century Gothic"   Template="{DynamicResource btnTopMenus}" Margin="10,7,10,-7"    >
+                    <Canvas>
+                        <!--<Viewbox Height="34" Canvas.Left="-16" Stretch="Fill" Canvas.Top="-20" Width="35">-->
+
+                        <Canvas>
+                            <Path Fill="{DynamicResource IconColorB}" Data="m232 96h32c8.824219 0 16 7.175781 16 16h16c0-17.648438-14.351562-32-32-32h-8v-16h-16v16h-8c-17.648438 0-32 14.351562-32 32s14.351562 32 32 32h32c8.824219 0 16 7.175781 16 16s-7.175781 16-16 16h-32c-8.824219 0-16-7.175781-16-16h-16c0 17.648438 14.351562 32 32 32h8v16h16v-16h8c17.648438 0 32-14.351562 32-32s-14.351562-32-32-32h-32c-8.824219 0-16-7.175781-16-16s7.175781-16 16-16zm0 0" Height="16.417" Canvas.Left="-3" Stretch="Fill" Canvas.Top="-21.417" Width="10" RenderTransformOrigin="1.067,-0.772"/>
+                            <Path Fill="{DynamicResource IconColorA}" Data="m448 416v-16c0-8.824219-7.175781-16-16-16h-152c-8.824219 0-16 7.175781-16 16v16c0 8.824219 7.175781 16 16 16v16c-8.824219 0-16 7.175781-16 16v16c0 8.824219 7.175781 16 16 16h152c8.824219 0 16-7.175781 16-16v-16c8.824219 0 16-7.175781 16-16v-16c0-8.824219-7.175781-16-16-16zm-168-16h152l.007812 16h-152.007812zm152.007812 80h-152.007812v-16h152zm-.007812-32h-136v-16h152l.007812 16zm0 0" Canvas.Left="3.834" Canvas.Top="2.958" Height="12.958" Stretch="Fill" Width="14" RenderTransformOrigin="0.571,-0.18"/>
+                            <Path Fill="{DynamicResource IconColorB}" Data="m280 320v-16c0-8.824219-7.175781-16-16-16h-152c-8.824219 0-16 7.175781-16 16v16h-16c-8.824219 0-16 7.175781-16 16v16h-16c-8.824219 0-16 7.175781-16 16v16c0 8.824219 7.175781 16 16 16v16c0 8.824219 7.175781 16 16 16v16c-8.824219 0-16 7.175781-16 16v16c0 8.824219 7.175781 16 16 16h152c8.824219 0 16-7.175781 16-16v-16c8.824219 0 16-7.175781 16-16v-16c0-8.824219-7.175781-16-16-16v-16c0-8.824219-7.175781-16-16-16v-16h16c8.824219 0 16-7.175781 16-16v-16h16c8.824219 0 16-7.175781 16-16zm-63.992188 160h-152.007812v-16h152zm16-32h-152.007812v-16h152zm-16-32h-152.007812v-16h152zm-16-32h-152.007812v-16h152zm32-32h-152.007812v-16h152zm-.007812-32h-120v-16h152l.007812 16zm0 0" Height="13.833" Stretch="Fill" Canvas.Top="1.916" Width="23.667" Canvas.Left="-25.167" RenderTransformOrigin="-1.743,-9.346"/>
+                            <!--<Path Fill="{DynamicResource IconColorA}" Data="m0 0v272h496v-272zm480 47.191406c-15.648438-3.191406-28-15.542968-31.191406-31.191406h31.191406zm-47.359375 208.808594h-369.28125c-3.519531-24.472656-22.886719-43.839844-47.359375-47.359375v-145.28125c24.472656-3.519531 43.839844-22.886719 47.359375-47.359375h369.28125c3.519531 24.472656 22.886719 43.839844 47.359375 47.359375v145.28125c-24.472656 3.519531-43.839844 22.886719-47.359375 47.359375zm-385.449219-240c-3.191406 15.648438-15.542968 28-31.191406 31.191406v-31.191406zm-31.191406 208.808594c15.648438 3.191406 28 15.542968 31.191406 31.191406h-31.191406zm432.808594 31.191406c3.191406-15.648438 15.542968-28 31.191406-31.191406v31.191406zm0 0" Height="31" Stretch="Fill" Width="62.667" Canvas.Left="-30" Canvas.Top="-28.833"/>-->
+                            <Path Fill="{DynamicResource IconColorB}" Data="m248 32c-57.34375 0-104 46.65625-104 104s46.65625 104 104 104 104-46.65625 104-104-46.65625-104-104-104zm0 192c-48.519531 0-88-39.480469-88-88s39.480469-88 88-88 88 39.480469 88 88-39.480469 88-88 88zm0 0" Height="22.832" Stretch="Fill" Width="24.667" Canvas.Top="-25.583" RenderTransformOrigin="-0.086,-0.211" Canvas.Left="-10.667"/>
+                        </Canvas>
+
+                        <TextBlock Text="Transaction" Canvas.Left="-34" Canvas.Top="17" Foreground="{DynamicResource TopButtonTextColor}"  ></TextBlock>
+
+                    </Canvas>
+                </Button>
+
+                <Button x:Name="btnAddSegment" Click="btnAddSegment_Click"  Background="{DynamicResource TopMenuBtnColor}"   Grid.Column="2" Height="69" Foreground="White"   Width="70" FontFamily="Century Gothic"   Template="{DynamicResource btnTopMenus}" Margin="10,7,10,-7"    >
+                    <Canvas>
+                        <!--<Viewbox Height="34" Canvas.Left="-16" Stretch="Fill" Canvas.Top="-20" Width="35">-->
+
+                        <Canvas>
+                            <Path Data="M21,12c-1.055,0-2.061,0.19-3,0.522V10h-8v2H6V8h2V0H0v8h4v15.999h6V28h5.35    c1.545,1.248,3.51,1.999,5.65,2c4.971-0.002,8.998-4.029,9-9C29.998,16.027,25.971,12,21,12z M12.059,20H10v2H6.001L6,13.998h4V18    h2.522C12.297,18.639,12.135,19.307,12.059,20z M21,27.883c-3.801-0.009-6.876-3.084-6.885-6.883    c0.009-3.801,3.084-6.876,6.885-6.885c3.799,0.009,6.874,3.084,6.883,6.885C27.874,24.799,24.799,27.874,21,27.883z" Fill="{DynamicResource IconColorA}" RenderTransformOrigin="-0.1,0.133" Canvas.Left="-14" Canvas.Top="-19.75"/>
+                            <Polygon  Points="22.002,20 22.002,16 20,16 20,20 16,20 16,22 20,22 20,26 22.002,26 22.002,22 26,22     26,20 "   Fill="{DynamicResource IconColorB}" RenderTransformOrigin="-0.1,0.133" Canvas.Left="-14" Canvas.Top="-19.75"></Polygon>
+                        </Canvas>
+
+                        <TextBlock Text="Segment" Canvas.Left="-27" Canvas.Top="17" Foreground="{DynamicResource TopButtonTextColor}"  />
+
+                    </Canvas>
+                </Button>
+                <Border Grid.Column="13" BorderBrush="#FF7C2626" Background="{DynamicResource ValueBoxColor}" Margin="0,10,0,-7" >
+
+                    <WrapPanel HorizontalAlignment="Center">
+                        <TextBlock   Style="{DynamicResource TitleText1}" VerticalAlignment="Center"  HorizontalAlignment="Center"><Run Text="Current Value"/></TextBlock>
+                        <TextBlock  Grid.Column="12" x:Name="txtTotalCurrentValue"  Foreground="White"  Style="{DynamicResource TitleText1}" VerticalAlignment="Center"   />
+                    </WrapPanel>
+                </Border>
+                <Border Grid.Column="15" BorderBrush="#FF7C2626" Background="{DynamicResource ValueBoxColor}" Margin="0,10,0,-7" >
+
+                    <WrapPanel HorizontalAlignment="Center">
+                        <TextBlock   Style="{DynamicResource TitleText1}" VerticalAlignment="Center"  HorizontalAlignment="Center"><Run Text="Invested Value"/></TextBlock>
+                        <TextBlock  Grid.Column="12" x:Name="txtTotalInvestedValue"  Foreground="White"  Style="{DynamicResource TitleText1}" VerticalAlignment="Center"   />
+                    </WrapPanel>
+                </Border>
+                <Border Grid.Column="17" BorderBrush="#FF7C2626" Background="{DynamicResource ValueBoxColor}" Margin="0,10,0,-7" >
+
+                    <WrapPanel HorizontalAlignment="Center">
+                        <TextBlock   Style="{DynamicResource TitleText1}" Name="txtNPText" VerticalAlignment="Center"  HorizontalAlignment="Center"><Run Text="Net Profit/Loss"/></TextBlock>
+                        <TextBlock x:Name="txtNetProfit"  Foreground="LightCyan"  Style="{DynamicResource TitleText1}" VerticalAlignment="Center"   ></TextBlock>
+                    </WrapPanel>
+                </Border>
+
+            </Grid>
+        </Canvas>
+        <Canvas  Grid.Row="1"   Grid.Column="0"   Background="{DynamicResource SideStrip}">
+        </Canvas>
+        <Canvas  Grid.Row="2"   Grid.Column="0" Grid.ColumnSpan="3"  Background="{DynamicResource BottomStatusBar}">
+            <TextBlock x:Name="StatusText" Width="758" VerticalAlignment="Center" Canvas.Top="10" Canvas.Left="10" FontSize="13" Foreground="Beige" ></TextBlock>
+        </Canvas>
+
+        <Canvas Grid.Column="1" Margin="10,0" Height="294" VerticalAlignment="Top" Grid.ColumnSpan="2" Grid.Row="1" >
+            <Grid   x:Name="grdStocks"    >
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="55"/>
+
+                </Grid.RowDefinitions>
+
+            </Grid>
+
+            <uc:InsertForm x:Name="UcInsertForm"  Canvas.Left="2100"  Canvas.Top="200"  Height="130" Width="300" CancelClicked="UcInsertForm_CancelClicked" SaveClicked="UcInsertForm_SaveClicked"></uc:InsertForm>
+            <Canvas x:Name="TransWindow" Canvas.Left="600" Canvas.Top="50" Opacity="0"  >
+                <Border  BorderThickness="5,5,5,5" CornerRadius="5"  >
+                    <Border.BorderBrush>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <LinearGradientBrush.RelativeTransform>
+                                <TransformGroup>
+                                    <ScaleTransform CenterY="0.5" CenterX="0.5"/>
+                                    <SkewTransform CenterY="0.5" CenterX="0.5"/>
+                                    <RotateTransform CenterY="0.5" CenterX="0.5"/>
+                                    <TranslateTransform/>
+                                </TransformGroup>
+                            </LinearGradientBrush.RelativeTransform>
+                            <GradientStop Color="#FFA09595"/>
+                            <GradientStop Color="#FF999797" Offset="0.787"/>
+                            <GradientStop Color="#FFF0E9E9" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Border.BorderBrush>
+                    <Border.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="#FF0C7873" Offset="0.804"/>
+                            <GradientStop Color="#FF065350" Offset="0.104"/>
+                            <GradientStop Color="#EB253C30" Offset="0.509"/>
+                        </LinearGradientBrush>
+                    </Border.Background>
+                    <uc:UcDisplayTransaction  x:Name="TransDetailsWindow" CloseButtonClicked="TransDetailsWindow_CloseButtonClicked"  Canvas.Left="25" Canvas.Top="25" Canvas.Bottom="25" Canvas.Right="25"  ></uc:UcDisplayTransaction>
+                </Border>
+            </Canvas>
+        </Canvas>
+
+
+
+    </Grid>
+</Window>

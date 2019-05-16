@@ -1,0 +1,15 @@
+C:\Samples\StockFocusV4\StockFocus.HelperTests\bin\Debug\StockFocus.HelperTests.dll
+C:\Samples\StockFocusV4\StockFocus.HelperTests\bin\Debug\StockFocus.HelperTests.pdb
+C:\Samples\StockFocusV4\StockFocus.HelperTests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Samples\StockFocusV4\StockFocus.HelperTests\bin\Debug\StockFocus.Entites.dll
+C:\Samples\StockFocusV4\StockFocus.HelperTests\bin\Debug\StockFocus.Helper.dll
+C:\Samples\StockFocusV4\StockFocus.HelperTests\bin\Debug\StockFocus.Service.dll
+C:\Samples\StockFocusV4\StockFocus.HelperTests\bin\Debug\StockFocus.Entites.pdb
+C:\Samples\StockFocusV4\StockFocus.HelperTests\bin\Debug\StockFocus.Helper.pdb
+C:\Samples\StockFocusV4\StockFocus.HelperTests\bin\Debug\StockFocus.Service.pdb
+C:\Samples\StockFocusV4\StockFocus.HelperTests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml
+C:\Samples\StockFocusV4\StockFocus.HelperTests\obj\Debug\StockFocus.HelperTests.csprojResolveAssemblyReference.cache
+C:\Samples\StockFocusV4\StockFocus.HelperTests\obj\Debug\StockFocus.HelperTests.dll
+C:\Samples\StockFocusV4\StockFocus.HelperTests\obj\Debug\StockFocus.HelperTests.pdb
+C:\Samples\StockFocusV4\StockFocus.HelperTests\bin\Debug\Newtonsoft.Json.dll
+C:\Samples\StockFocusV4\StockFocus.HelperTests\bin\Debug\Newtonsoft.Json.xml

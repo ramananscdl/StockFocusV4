@@ -1,0 +1,13 @@
+C:\Samples\StockFocusV4\StockFocus.Service\bin\Debug\StockFocus.Service.dll
+C:\Samples\StockFocusV4\StockFocus.Service\bin\Debug\StockFocus.Service.pdb
+C:\Samples\StockFocusV4\StockFocus.Service\bin\Debug\StockFocus.Entites.dll
+C:\Samples\StockFocusV4\StockFocus.Service\bin\Debug\StockFocus.Helper.dll
+C:\Samples\StockFocusV4\StockFocus.Service\bin\Debug\StockFocus.Entites.pdb
+C:\Samples\StockFocusV4\StockFocus.Service\bin\Debug\StockFocus.Helper.pdb
+C:\Samples\StockFocusV4\StockFocus.Service\obj\Debug\StockFocus.Service.dll
+C:\Samples\StockFocusV4\StockFocus.Service\obj\Debug\StockFocus.Service.pdb
+C:\Samples\StockFocusV4\StockFocus.Service\bin\Debug\Newtonsoft.Json.dll
+C:\Samples\StockFocusV4\StockFocus.Service\bin\Debug\Newtonsoft.Json.xml
+C:\Samples\StockFocusV4\StockFocus.Service\obj\Debug\StockFocus.Service.csprojAssemblyReference.cache
+C:\Samples\StockFocusV4\StockFocus.Service\obj\Debug\StockFocus.Service.csproj.CoreCompileInputs.cache
+C:\Samples\StockFocusV4\StockFocus.Service\obj\Debug\StockFocus.Service.csproj.CopyComplete
