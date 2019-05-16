@@ -8,7 +8,7 @@
         <GradientStop Color="#FF5BB1C8" Offset="0.306"/>
     </LinearGradientBrush>
 
-
+<!-- some thing -->
     <SolidColorBrush Color= "#415d69" x:Key="TopButtonTextColor" />
     <SolidColorBrush Color= "#FF628393" x:Key="SideStrip" />
     <SolidColorBrush Color="#619c73" x:Key="MouseHoverColor" ></SolidColorBrush>
