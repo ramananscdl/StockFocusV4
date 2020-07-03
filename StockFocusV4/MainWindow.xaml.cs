@@ -42,9 +42,16 @@ namespace StockFocusV4
 			InitializeComponent();
 			CurrentOrder = new GridTag("DifferenceInPercentage", GridSortOrder.Ascending);
 
-			LoadPortfolio();
-			btntest_Click(this, null);
-			txtLastDate.Text = DataLayer.GetLastUpdatedDate().ToString("dd-MMM-yyyy");
+			try
+			{
+				LoadPortfolio();
+				btntest_Click(this, null);
+				txtLastDate.Text = DataLayer.GetLastUpdatedDate().ToString("dd-MMM-yyyy");
+			}
+			catch (Exception ex)
+			{
+				StatusText.Text = ex.Message;
+			}
 
 
 		}
