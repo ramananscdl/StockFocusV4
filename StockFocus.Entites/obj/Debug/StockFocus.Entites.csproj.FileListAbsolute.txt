@@ -16,3 +16,12 @@ E:\Softwares\Shared\StockFocusV4\StockFocus.Entites\obj\Debug\StockFocus.Entites
 E:\Softwares\Shared\StockFocusV4\StockFocus.Entites\obj\Debug\StockFocus.Entites.csproj.CopyComplete
 E:\Softwares\Shared\StockFocusV4\StockFocus.Entites\obj\Debug\StockFocus.Entites.dll
 E:\Softwares\Shared\StockFocusV4\StockFocus.Entites\obj\Debug\StockFocus.Entites.pdb
+E:\Samples\StockFocusV4\StockFocus.Entites\bin\Debug\StockFocus.Entites.dll
+E:\Samples\StockFocusV4\StockFocus.Entites\bin\Debug\StockFocus.Entites.pdb
+E:\Samples\StockFocusV4\StockFocus.Entites\bin\Debug\StockFocus.Helper.dll
+E:\Samples\StockFocusV4\StockFocus.Entites\bin\Debug\StockFocus.Helper.pdb
+E:\Samples\StockFocusV4\StockFocus.Entites\obj\Debug\StockFocus.Entites.csprojAssemblyReference.cache
+E:\Samples\StockFocusV4\StockFocus.Entites\obj\Debug\StockFocus.Entites.csproj.CoreCompileInputs.cache
+E:\Samples\StockFocusV4\StockFocus.Entites\obj\Debug\StockFocus.Entites.csproj.CopyComplete
+E:\Samples\StockFocusV4\StockFocus.Entites\obj\Debug\StockFocus.Entites.dll
+E:\Samples\StockFocusV4\StockFocus.Entites\obj\Debug\StockFocus.Entites.pdb
