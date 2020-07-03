@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-E:\Softwares\Shared\StockFocusV4\StockFocusV4\obj\Debug\
+E:\Samples\StockFocus\StockFocusV4\obj\Debug\
 StockFocus.UI
 none
 false
 DEBUG;TRACE
-E:\Softwares\Shared\StockFocusV4\StockFocusV4\App.xaml
+E:\Samples\StockFocus\StockFocusV4\App.xaml
 71991519431
 
 14178132009
-24-1262702046
+24-895546969
 BlueTheme.xaml;InsertForm.xaml;MainWindow.xaml;ManageForm.xaml;SettingsWindow.xaml;UcContextMenu.xaml;UcDisplayTransaction.xaml;
 intro.png
 False

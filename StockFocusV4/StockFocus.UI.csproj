@@ -179,6 +179,9 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <Resource Include="StockFocus.sfc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
     <None Include="StockFocus.UI_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>

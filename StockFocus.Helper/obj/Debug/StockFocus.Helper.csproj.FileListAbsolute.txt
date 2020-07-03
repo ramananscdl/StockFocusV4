@@ -16,3 +16,9 @@ E:\Samples\StockFocusV4\StockFocus.Helper\obj\Debug\StockFocus.Helper.csprojAsse
 E:\Samples\StockFocusV4\StockFocus.Helper\obj\Debug\StockFocus.Helper.csproj.CoreCompileInputs.cache
 E:\Samples\StockFocusV4\StockFocus.Helper\obj\Debug\StockFocus.Helper.dll
 E:\Samples\StockFocusV4\StockFocus.Helper\obj\Debug\StockFocus.Helper.pdb
+E:\Samples\StockFocus\StockFocus.Helper\bin\Debug\StockFocus.Helper.dll
+E:\Samples\StockFocus\StockFocus.Helper\bin\Debug\StockFocus.Helper.pdb
+E:\Samples\StockFocus\StockFocus.Helper\obj\Debug\StockFocus.Helper.csprojAssemblyReference.cache
+E:\Samples\StockFocus\StockFocus.Helper\obj\Debug\StockFocus.Helper.csproj.CoreCompileInputs.cache
+E:\Samples\StockFocus\StockFocus.Helper\obj\Debug\StockFocus.Helper.dll
+E:\Samples\StockFocus\StockFocus.Helper\obj\Debug\StockFocus.Helper.pdb

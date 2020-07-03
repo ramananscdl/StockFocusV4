@@ -37,3 +37,16 @@ E:\Samples\StockFocusV4\StockFocus.Service\obj\Debug\StockFocus.Service.csproj.C
 E:\Samples\StockFocusV4\StockFocus.Service\obj\Debug\StockFocus.Service.csproj.CopyComplete
 E:\Samples\StockFocusV4\StockFocus.Service\obj\Debug\StockFocus.Service.dll
 E:\Samples\StockFocusV4\StockFocus.Service\obj\Debug\StockFocus.Service.pdb
+E:\Samples\StockFocus\StockFocus.Service\bin\Debug\StockFocus.Service.dll
+E:\Samples\StockFocus\StockFocus.Service\bin\Debug\StockFocus.Service.pdb
+E:\Samples\StockFocus\StockFocus.Service\bin\Debug\Newtonsoft.Json.dll
+E:\Samples\StockFocus\StockFocus.Service\bin\Debug\StockFocus.Entites.dll
+E:\Samples\StockFocus\StockFocus.Service\bin\Debug\StockFocus.Helper.dll
+E:\Samples\StockFocus\StockFocus.Service\bin\Debug\StockFocus.Entites.pdb
+E:\Samples\StockFocus\StockFocus.Service\bin\Debug\StockFocus.Helper.pdb
+E:\Samples\StockFocus\StockFocus.Service\bin\Debug\Newtonsoft.Json.xml
+E:\Samples\StockFocus\StockFocus.Service\obj\Debug\StockFocus.Service.csprojAssemblyReference.cache
+E:\Samples\StockFocus\StockFocus.Service\obj\Debug\StockFocus.Service.csproj.CoreCompileInputs.cache
+E:\Samples\StockFocus\StockFocus.Service\obj\Debug\StockFocus.Service.csproj.CopyComplete
+E:\Samples\StockFocus\StockFocus.Service\obj\Debug\StockFocus.Service.dll
+E:\Samples\StockFocus\StockFocus.Service\obj\Debug\StockFocus.Service.pdb

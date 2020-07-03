@@ -85,7 +85,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>fxRvRHwpS7h7l1V6ZRNR90ZLumwpLZ0KZhQr7ECmkgg=</dsig:DigestValue>
+        <dsig:DigestValue>n4DxgmCoExsZrUnoleKjqehWcItXxYwifdMLDGfJzNg=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -109,19 +109,19 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>SdFlUgUAN/hWwswK9XydUvw6S/yhoFixPfIuJFZembc=</dsig:DigestValue>
+        <dsig:DigestValue>cUIrXofs4vnS3XXpuMSF86Jc2FHfYP24avA+xcHvjsk=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="StockFocus.UI.exe" size="360904">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="StockFocus.UI.exe" size="362440">
       <assemblyIdentity name="StockFocus.UI" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>J1vDIjheuRWahW1kV2IMZFopFQU7B59TKyEqLGbAS0Y=</dsig:DigestValue>
+        <dsig:DigestValue>es8kE/G9CUWPB202sfrf1DRmtiNHPoCxqsdLi+qd/3A=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

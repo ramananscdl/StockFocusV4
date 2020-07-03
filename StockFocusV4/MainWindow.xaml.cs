@@ -804,7 +804,7 @@ namespace StockFocusV4
 			AnimationHelper.SlideAnimate(ucSettings, 1, 2400, 0, new QuarticEase() { EasingMode = EasingMode.EaseIn }, false);
 			var xml = Serializer.SerializeObject<StockFocus.Entites.SettingBase>(BaseSettings);
 
-			using (FileStream fs = new FileStream("StockFocus.sfc", FileMode.OpenOrCreate, FileAccess.Write))
+			using (FileStream fs = new FileStream("StockFocus.sfc", FileMode.Create, FileAccess.Write))
 			{
 				using (StreamWriter sw = new StreamWriter(fs))
 				{
