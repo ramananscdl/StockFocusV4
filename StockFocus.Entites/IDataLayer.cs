@@ -29,6 +29,15 @@ namespace StockFocus.Entites
         bool EditSegment(Segment segment);
 
 
+        bool DeletePortfolio(int portfolioId);
+
+        bool DeleteStock(int stockId);
+
+        bool DeleteTransaction(int transactionId);
+
+        bool DeleteSegment(int segmentId);
+
+        DateTime GetLastUpdatedDate();
 
         List<Portfolio> GetPortfolios();
         List<Transaction> GetTransactionsByPortfolio(DateTime StartDate, DateTime EndDate, int PortfolioId);
@@ -41,6 +50,10 @@ namespace StockFocus.Entites
         List<Stock> GetStockList();
 
         decimal GetNetRealizedProfitByProfileId(int portfolioId);
+
+        string ConnectionString { get; set; }
+
+
 
     }
 }

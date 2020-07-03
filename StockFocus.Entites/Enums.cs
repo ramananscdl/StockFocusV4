@@ -37,6 +37,19 @@ namespace StockFocus.Entites
         AddSegment = 4
     }
 
+    public enum ManageOperation
+    {
+       Edit,
+       Delete,
+       Create
+    }
+
+    public enum OperationMode
+	{
+        Single,
+        Multiple
+	}
+
     public enum GridSortOrder
     {
         None = 0,
@@ -44,4 +57,14 @@ namespace StockFocus.Entites
         Descending = 2
 
     }
+
+
+    public enum TransactionColumn
+	{
+        Date = 0,
+        Quantity = 1,
+        Amount =2,
+        TotalAmount = 3,
+        Transaction =4
+	}
 }

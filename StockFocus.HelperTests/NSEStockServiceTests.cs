@@ -74,7 +74,6 @@ namespace StockFocus.Service.Tests
         public void NiftyNSETest()
         {
             NSEStockService se = new NSEStockService();
-            se.GetNiftyPoints();
         }
     }
 }

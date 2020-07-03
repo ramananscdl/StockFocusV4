@@ -58,5 +58,7 @@ namespace StockFocus.Entites
             return result;
         }
 
+        
+
     }
 }

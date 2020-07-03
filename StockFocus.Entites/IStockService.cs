@@ -8,6 +8,6 @@ namespace StockFocus.Service
         Task<Stock> GetOnlineStockDetails(Stock stock);
         Task<decimal> GetStockPrice(string symbol, bool IsNSE);
 
-         decimal GetNiftyPoints();
+        Task<Index> GetIndexPoints(bool isNifty = true);
     }
 }

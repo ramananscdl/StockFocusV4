@@ -24,5 +24,10 @@ namespace StockFocus.Entites
         }
         public string DisplayName { get; set; }
         public string ColumnName { get; set; }
-    }
+
+		public override string ToString()
+		{
+            return this.ColumnName;
+		}
+	}
 }

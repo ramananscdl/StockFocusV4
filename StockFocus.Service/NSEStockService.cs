@@ -20,7 +20,7 @@ namespace StockFocus.Service
         {
             try
             {
-                string json = await Task.Run(() => ExtractJson(WebHelper.GetWebResponse(baseUrl + stock.NSECode).Result));
+                string json = await Task.Run(() => ExtractJson(WebHelper.GetWebResponse(baseUrl + stock.NSECode)));
                 var baseObject = JObject.Parse(json)["data"][0];
                 stock.Change = baseObject["change"].ToDecimal();
                 stock.Close = baseObject["previousClose"].ToDecimal();
@@ -50,7 +50,7 @@ namespace StockFocus.Service
         {
             try
             {
-                string json = await Task.Run(() => ExtractJson(WebHelper.GetWebResponse(baseUrl + symbol).Result));
+                string json = await Task.Run(() => ExtractJson(WebHelper.GetWebResponse(baseUrl + symbol)));
 
                 var baseObject = JObject.Parse(json)["data"][0];
 
@@ -67,15 +67,28 @@ namespace StockFocus.Service
 
         }
 
-        public decimal GetNiftyPoints()
+        Index GetNiftyPoints()
         {
-            string content = WebHelper.GetWebResponse(homeUrl).Result;
-            content = content.Substring(content.IndexOf("lastPriceNIFTY 50"));content = content.Substring(150);
+            Index i = new Index();
+            decimal cmp = 0;
+            i.IndexName = "NIFTY";
+            string content = WebHelper.GetWebResponse(homeUrl);
+            content = content.Substring(content.IndexOf("lastPriceNIFTY 50")); content = content.Substring(150);
             content = content.Substring(content.IndexOf("lastPriceNIFTY 50"));
             content = content.Substring(content.IndexOf(">"));
             content = content.Substring(content.IndexOf(">"));
-            content = content.Substring(1, content.IndexOf("<") );
-            return 0;
+            content = content.Substring(1, content.IndexOf("<"));
+            decimal.TryParse(content, out cmp);
+            i.CMP = cmp;
+            return i;
         }
+
+        public async Task<Index> GetIndexPoints(bool isNifty = true)
+        {
+            var i = await Task.Run(() => GetNiftyPoints());
+            return i;
+        }
+
+
     }
 }

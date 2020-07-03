@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-16"?>
+<SettingBase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <DBConnectionString>Server=RAMANANDT\RAMANANEXP;Database=SFDB;User ID=sa;password=Enter321;</DBConnectionString>
+  <RefreshInterval>100000</RefreshInterval>
+  <DisplayColumns>
+    <SfGridColumn>
+      <DisplayName>Stock Name</DisplayName>
+      <ColumnName>StockName</ColumnName>
+    </SfGridColumn>
+    <SfGridColumn>
+      <DisplayName>Last Price</DisplayName>
+      <ColumnName>CMP</ColumnName>
+    </SfGridColumn>
+    <SfGridColumn>
+      <DisplayName>Change %</DisplayName>
+      <ColumnName>DifferenceInPercentage</ColumnName>
+    </SfGridColumn>
+    <SfGridColumn>
+      <DisplayName>Change</DisplayName>
+      <ColumnName>Change</ColumnName>
+    </SfGridColumn>
+    <SfGridColumn>
+      <DisplayName>Quantity</DisplayName>
+      <ColumnName>Quantity</ColumnName>
+    </SfGridColumn>
+    <SfGridColumn>
+      <DisplayName>Current Value</DisplayName>
+      <ColumnName>CurrentValue</ColumnName>
+    </SfGridColumn>
+    <SfGridColumn>
+      <DisplayName>Invested Value</DisplayName>
+      <ColumnName>InvestedValue</ColumnName>
+    </SfGridColumn>
+    <SfGridColumn>
+      <DisplayName>Gain / Loss</DisplayName>
+      <ColumnName>NetProfit</ColumnName>
+    </SfGridColumn>
+    <SfGridColumn>
+      <DisplayName>Break Even</DisplayName>
+      <ColumnName>AdjustedPrice</ColumnName>
+    </SfGridColumn>
+    <SfGridColumn>
+      <DisplayName>Cur - Wtg</DisplayName>
+      <ColumnName>CurrentWeightage</ColumnName>
+    </SfGridColumn>
+    <SfGridColumn>
+      <DisplayName>Inv - Wtg</DisplayName>
+      <ColumnName>InvestedWeightage</ColumnName>
+    </SfGridColumn>
+  </DisplayColumns>
+</SettingBase>

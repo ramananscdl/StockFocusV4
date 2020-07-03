@@ -1,0 +1,115 @@
+﻿<UserControl x:Class="StockFocus.UI.SettingsWindow"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:StockFocus.UI"
+             xmlns:md="http://materialdesigninxaml.net/winfx/xaml/themes"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40"></RowDefinition>
+            <RowDefinition/>
+            <RowDefinition Height="50"/>
+        </Grid.RowDefinitions>
+        <StackPanel Background="{DynamicResource ToolBoxHeaderColor}" Orientation="Horizontal">
+            <md:PackIcon Kind="Settings" Height="35"  Width="30" Foreground="{DynamicResource   IconColorB}"></md:PackIcon>
+            <TextBlock Text="Settings"  Width="704" Style="{DynamicResource   GridText}" VerticalAlignment="Center" HorizontalAlignment="Left"
+                       Margin="10,10,10,11" Height="19" ></TextBlock>
+            <Button Content="X" Height="30" Width="30" Template="{DynamicResource btnTopMenus}" Background="{DynamicResource TopMenuBtnColor}"  
+                    FontSize="19" Foreground="{DynamicResource IconColorB}" Margin="12,5" Click="CancelBtn_Click"/>
+
+        </StackPanel>
+
+        <Canvas  Grid.Row="1" Background="{DynamicResource PopupBody}" >
+            <TabControl  VerticalAlignment="Stretch" HorizontalAlignment="Stretch" FontSize="15"  FontFamily="Segoe UI"  TabIndex="0" Height="357" Canvas.Top="1" Width="799" Background="{DynamicResource LightGreenBG}" >
+                
+                <TabItem Header="General">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="10"></ColumnDefinition>
+                            <ColumnDefinition Width="355*"></ColumnDefinition>
+                            <ColumnDefinition Width="73*"></ColumnDefinition>
+                            <ColumnDefinition Width="365*"></ColumnDefinition>
+                            <ColumnDefinition Width="10"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="75"></RowDefinition>
+                            <RowDefinition Height="35"></RowDefinition>
+                            <RowDefinition Height="170*"></RowDefinition>
+                            <RowDefinition Height="10"></RowDefinition>
+                        </Grid.RowDefinitions>
+
+
+
+                        <ComboBox Grid.Column="3" Grid.Row="0" Width="100" HorizontalAlignment="Left"   Height="30" Name="lbRefreshInterval" >
+                            <TextBlock  Tag="1">1 min</TextBlock>
+                            <TextBlock  Tag="2">2 min</TextBlock>
+                            <TextBlock  Tag="3">3 min</TextBlock>
+                            <TextBlock  Tag="4">4 min</TextBlock>
+                            <TextBlock  Tag="5">5 min</TextBlock>
+                            <TextBlock  Tag="10">10 min</TextBlock>
+                            <TextBlock  Tag="15">15 min</TextBlock>
+                            <TextBlock  Tag="30">30 min</TextBlock>
+                            <TextBlock   Tag="60">1 Hour</TextBlock>
+                            <TextBlock   Tag="120">2 Hour</TextBlock>
+                            <TextBlock   Tag="100000">Manual</TextBlock>
+
+
+                        </ComboBox>
+                        <Canvas Grid.Column="3" Grid.Row="0"  >
+
+                        </Canvas>
+
+                        <TextBlock Grid.Column="1"   Text="Refresh Interval"  Foreground="{DynamicResource SFTextColor}" VerticalAlignment="Center" HorizontalAlignment="Right" Height="20"  Width="102" Margin="0,28,0,27"/>
+                        <TextBlock Text="Columns to Display" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="2" HorizontalAlignment="Right"   TextDecorations="{x:Null}" FontFamily="Cambria" FontSize="18" FontWeight="Bold" Foreground="{DynamicResource SFTextColor}"  />
+                        <StackPanel Orientation="Vertical" Grid.Row="2" Grid.Column="1">
+                            <TextBlock Text="Available Columns" HorizontalAlignment="Center"  Foreground="{DynamicResource SFTextColor}"></TextBlock>
+                            <ListBox x:Name="lstAvlColumn" Height="160"  SelectionMode="Multiple" ></ListBox>
+                        </StackPanel>
+                        <StackPanel Orientation="Vertical" Grid.Row="2" Grid.Column="3">
+                            <TextBlock Text="Display Columns" HorizontalAlignment="Center"  Foreground="{DynamicResource SFTextColor}"></TextBlock>
+                            <ListBox x:Name="lstDispColumn" Height="160" SelectionMode="Multiple"   ></ListBox>
+                        </StackPanel>
+                        <Canvas Grid.Column="2" Grid.Row="2">
+                            <Button Width="25" Height="25"  x:Name="btnLtR" Template="{DynamicResource   btnTopMenus }" Click="btnLtR_Click" Background="Wheat" Canvas.Left="22" Canvas.Top="54" >
+                                <md:PackIcon Kind="FastForward" Foreground="{DynamicResource ButtonBG}"   ></md:PackIcon>
+                            </Button>
+                            <Button Width="25" Height="25"  x:Name="btnRtL" Template="{DynamicResource   btnTopMenus }" Click="btnRtL_Click" Background="Wheat" Canvas.Left="23" Canvas.Top="91" >
+                                <md:PackIcon Kind="Rewind" Foreground="{DynamicResource ButtonBG}"  ></md:PackIcon>
+                            </Button>
+                        </Canvas>
+                    </Grid>
+
+
+                </TabItem>
+                <TabItem Header="Database" TabIndex="1">
+
+                    <Canvas Width="780" Height="330">
+                        <TextBlock Text="Enter your Database connection string here" Canvas.Left="128" Canvas.Top="70"></TextBlock>
+                        <TextBox x:Name="txtDBConnection" Width="497" Height="92" MaxLines="8" Canvas.Left="127" Canvas.Top="98"></TextBox>
+                    </Canvas>
+
+                </TabItem>
+                <TabItem Header="Bulk Upload">
+                    <Canvas Width="780" Height="330">
+
+                        <DataGrid Height="100" x:Name="dgTes" Canvas.Left="166" Canvas.Top="125" Width="100"/>
+
+                    </Canvas>
+                </TabItem>
+
+
+            </TabControl>
+
+        </Canvas>
+        <Canvas Background="{DynamicResource BottomStatusBar}" Grid.Row="2"  >
+            <StackPanel  Orientation="Horizontal" HorizontalAlignment="Right" Canvas.Left="578" Canvas.Top="1" >
+                <Button Content="Save" Width="90" Name="SaveBtn" Height="35" Margin="8" Template="{DynamicResource  btnGridHeader}" FontSize="16"  Background="{DynamicResource ButtonBG  }"  Foreground="{DynamicResource   ValueBoxColor}" Click="SaveBtn_Click"></Button>
+                <Button Content="Cancel" Width="90" Name="CancelBtn" Height="35" Margin="8" Template="{DynamicResource    btnGridHeader}" FontSize="16"   Background="{DynamicResource ButtonBG  }"  Foreground="{DynamicResource   ValueBoxColor}" Click="CancelBtn_Click"></Button>
+            </StackPanel>
+        </Canvas>
+
+    </Grid>
+</UserControl>
