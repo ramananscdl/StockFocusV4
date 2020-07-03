@@ -235,7 +235,7 @@
         <Canvas  Grid.Row="2"   Grid.Column="0" Grid.ColumnSpan="4"  Background="{DynamicResource BottomBoxHeaderColor}">
             <WrapPanel Width="900">
                 <ProgressBar  x:Name="prgProgress" Width="100" Height="20" VerticalAlignment="Center" Margin="10"  Visibility="Collapsed" Background="LightGray"  Foreground="Teal"/>
-                <TextBlock x:Name="StatusText" Width="300" VerticalAlignment="Bottom" Margin="10" FontSize="14" Foreground="#FFFFEFA9"  Height="20" FontFamily="Century Gothic" Text="Hello"  />
+                <TextBlock x:Name="StatusText" Width="700" VerticalAlignment="Bottom" Margin="10" FontSize="14" Foreground="#FFFFEFA9"  Height="20" FontFamily="Century Gothic" Text="Hello"  />
 
             </WrapPanel>
 
