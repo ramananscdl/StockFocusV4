@@ -438,8 +438,16 @@
         <Setter Property="Foreground">
             <Setter.Value>
                 <LinearGradientBrush EndPoint="0.4,1" StartPoint="0.5,0">
-                    <GradientStop Color="#FF3CDD24" Offset="0.984"/>
-                    <GradientStop Color="#FF1EFF09" Offset="0.47"/>
+                    <LinearGradientBrush.RelativeTransform>
+                        <TransformGroup>
+                            <ScaleTransform CenterY="0.5" CenterX="0.5"/>
+                            <SkewTransform CenterY="0.5" CenterX="0.5"/>
+                            <RotateTransform Angle="-45.995" CenterY="0.5" CenterX="0.5"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </LinearGradientBrush.RelativeTransform>
+                    <GradientStop Color="#FF298D1F" Offset="0.984"/>
+                    <GradientStop Color="#FFD2FF09" Offset="0.06"/>
                 </LinearGradientBrush>
             </Setter.Value>
         </Setter>
@@ -458,7 +466,7 @@
         <Setter Property="Foreground">
             <Setter.Value>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                    <GradientStop Color="#FFF1F7BA" Offset="0.984"/>
+                    <GradientStop Color="#FFF1F7BA" Offset="0.784"/>
                     <GradientStop Color="#FFF52E1A" Offset="0.47"/>
                 </LinearGradientBrush>
             </Setter.Value>
